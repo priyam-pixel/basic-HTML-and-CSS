@@ -1,0 +1,31 @@
+/* TODO 3: Make all color titles normal weight */
+.color-title {
+  font-weight: normal;
+}
+
+/* TODO 2: Color each title to match its meaning, using the ids */
+#red {
+  color: red;
+}
+
+#blue {
+  color: blue;
+}
+
+#orange {
+  color: orange;
+}
+
+#green {
+  color: green;
+}
+
+#yellow {
+  color: yellow;
+}
+
+/* TODO 4: Make all images 200px by 200px */
+img {
+  width: 200px;
+  height: 200px;
+}

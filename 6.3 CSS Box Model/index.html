@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model</title>
+  <style>
+    /* Write your CSS code here */
+
+    /* TODO 2: every box is 200px by 200px */
+    div {
+      width: 200px;
+      height: 200px;
+    }
+
+    /* TODO 3 and 5: first box */
+    .box1 {
+      background-color: cadetblue;
+      padding: 20px;
+      border: 10px solid black;
+    }
+
+    /* TODO 6: remove the default margins from the paragraph */
+    .box1 p {
+      margin: 0;
+    }
+
+    /* TODO 3, 7 and 9: second box */
+    .box2 {
+      background-color: gold;
+      border-style: solid;
+      border-color: black;
+      border-width: 20px 10px;   /* 20px top and bottom, 10px left and right */
+      margin-left: 260px;        /* width of box 1 (200 + 20 + 20 + 10 + 10) */
+    }
+
+    /* TODO 3, 8 and 9: third box */
+    .box3 {
+      background-color: indianred;
+      border: 10px solid black;
+      margin-left: 40px;         /* 260 - 220 so its right edge lines up with box 2's left edge */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TODO 1: 3 boxes using div -->
+  <div class="box1">
+    <!-- TODO 4: paragraph inside the first div -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
+      id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+      dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.
+    </p>
+  </div>
+
+  <div class="box2"></div>
+
+  <div class="box3"></div>
+
+</body>
+
+</html>

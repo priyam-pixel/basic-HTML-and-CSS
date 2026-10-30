@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 28px 0;
+            background-color: #acbfb9;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .form-container {
+            width: 480px;
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 24px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: 28px 0 20px;
+            padding-bottom: 0;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #333;
+            border-bottom: 1px solid #555;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group > label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.75rem;
+        }
+
+        select {
+            padding: 9px 10px;
+            color: #000;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.85rem;
+            font-weight: normal;
+            color: #444;
+        }
+
+        .radio-group input,
+        .checkbox-group input {
+            margin-right: 4px;
+        }
+
+        .button-group {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8rem;
+            cursor: pointer;
+        }
+
+        .btn-reset {
+            background-color: #dc3545;
+        }
+
+        .btn-submit {
+            background-color: #28a745;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course/Program:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select your course</option>
+                    <option value="bcs">B.Sc. Computer Science</option>
+                    <option value="bca">BCA</option>
+                    <option value="btech">B.Tech IT</option>
+                    <option value="mcs">M.Sc. Computer Science</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Technical Skills / Interests:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="skills" value="html"> HTML/CSS</label>
+                    <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
+                    <label><input type="checkbox" name="skills" value="python"> Python</label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <input type="reset" class="btn btn-reset" value="Reset">
+                <input type="submit" class="btn btn-submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

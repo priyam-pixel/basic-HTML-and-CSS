@@ -1,0 +1,22 @@
+{
+    font-family:"Times New Roman",seriff;
+}
+
+h1,h2{
+    text-align: center;
+}
+.red{
+    color: red;
+}
+.center{
+    text-align: center;
+}
+
+#green{
+    color: green;
+    padding-left: 80px;
+}
+
+p[data-color="blue"]{
+    color: blue;
+}
